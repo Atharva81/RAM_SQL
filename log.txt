@@ -1,0 +1,169 @@
+
+Tue Nov 27 01:54:56 2018
+Input Query: create table students(  Name varchar(20) not null,Roll int not null,Age int default 20)
+Tue Nov 27 01:54:56 2018 :	step into function create
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+
+Tue Nov 27 01:54:56 2018
+Input Query: insert into students(Name,Roll) values("Ayush",5)
+Tue Nov 27 01:54:56 2018 :	step into function insert
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+
+Tue Nov 27 01:54:56 2018
+Input Query: INSERT INTO students (Name,Roll,Age) values ("Atharva",2,19)
+Tue Nov 27 01:54:56 2018 :	step into function insert
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+
+Tue Nov 27 01:54:56 2018
+Input Query: insert into students values ("Pranav",19,20)
+Tue Nov 27 01:54:56 2018 :	step into function insert
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+
+Tue Nov 27 01:54:56 2018
+Input Query: insert into students values ("Vidya",23,14)
+Tue Nov 27 01:54:56 2018 :	step into function insert
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+
+Tue Nov 27 01:54:56 2018
+Input Query: insert into students values ("Chester",40,41)
+Tue Nov 27 01:54:56 2018 :	step into function insert
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+
+Tue Nov 27 01:54:56 2018
+Input Query: insert into students values ("Disha",10,21)
+Tue Nov 27 01:54:56 2018 :	step into function insert
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+
+Tue Nov 27 01:54:56 2018
+Input Query: insert into students (name,Roll,Age) values ("John",10,25)
+Tue Nov 27 01:54:56 2018 :	step into function insert
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 	:Error Code 12,One or more column names are invalid
+
+Tue Nov 27 01:54:56 2018
+Input Query: insert into students (Roll, Age) values (10,18)
+Tue Nov 27 01:54:56 2018 :	step into function insert
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 	:Error Code 17,Fields without default value and notNull=true can't be skipped while inserting
+
+Tue Nov 27 01:54:56 2018
+Input Query: select * from students where Name in (select Name from students where Roll>15)
+Tue Nov 27 01:54:56 2018 :	step into function select
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function where
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function select
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function where
+Tue Nov 27 01:54:56 2018 :	step into function REL_OP
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function print
+
+Tue Nov 27 01:54:56 2018
+Input Query: select * from students
+Tue Nov 27 01:54:56 2018 :	step into function select
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function print
+
+Tue Nov 27 01:54:56 2018
+Input Query: select Name as FName, Roll as ID from students where ID in (5,19)
+Tue Nov 27 01:54:56 2018 :	step into function select
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function where
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function print
+
+Tue Nov 27 01:54:56 2018
+Input Query: select Name from students where Roll>3 and Age not in(19,41)
+Tue Nov 27 01:54:56 2018 :	step into function select
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function where
+Tue Nov 27 01:54:56 2018 :	step into function REL_OP
+Tue Nov 27 01:54:56 2018 :	step into function where
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function print
+
+Tue Nov 27 01:54:56 2018
+Input Query: create table nick(name varchar(20) not null,title varchar(20))
+Tue Nov 27 01:54:56 2018 :	step into function create
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+
+Tue Nov 27 01:54:56 2018
+Input Query: insert into nick values("Ayush","Kumar")
+Tue Nov 27 01:54:56 2018 :	step into function insert
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+
+Tue Nov 27 01:54:56 2018
+Input Query: insert into nick (title,name)values("Bennington","Chester")
+Tue Nov 27 01:54:56 2018 :	step into function insert
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function get_col_id
+
+Tue Nov 27 01:54:56 2018
+Input Query: insert into nick values("Vidya","Balan")
+Tue Nov 27 01:54:56 2018 :	step into function insert
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+Tue Nov 27 01:54:56 2018 :	step into function newNode
+
+Tue Nov 27 01:54:56 2018
+Input Query: select * from nick
+Tue Nov 27 01:54:56 2018 :	step into function select
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 :	step into function print
+
+Tue Nov 27 01:54:56 2018
+Input Query: drop table nick
+Tue Nov 27 01:54:56 2018 :	step into function drop
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+
+Tue Nov 27 01:54:56 2018
+Input Query: select * from nick
+Tue Nov 27 01:54:56 2018 :	step into function select
+Tue Nov 27 01:54:56 2018 :	step into function find_tab_id
+Tue Nov 27 01:54:56 2018 	:Error Code 3,Table doesn't exist int the database
+Tue Nov 27 01:54:56 2018 :	step into function print
+
+Tue Nov 27 01:54:56 2018
+Input Query: exit
