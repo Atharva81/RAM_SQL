@@ -1,3 +1,11 @@
+/**
+    CS-3700 Asn 2, main.cpp
+    Purpose: To create a RAM based DBMS
+
+    @author Ayush Kumar
+    @version 1.1 26/11/18 
+*/
+
 #include <bits/stdc++.h>
 #include <regex>
 #include <stdio.h>
