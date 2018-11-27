@@ -3,6 +3,9 @@
     Purpose: To create a RAM based DBMS
 
     @author Ayush Kumar
+    @author Pranav Jha
+    @author Atharva Gupta
+    @author Pratik Agrawalla
     @version 1.1 26/11/18 
 */
 
